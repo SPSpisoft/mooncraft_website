@@ -144,7 +144,7 @@ class _homeState extends State<home> {
                       child: Column(
                         children: [
                           Image(image: AssetImage('bed.png')),
-                          Text('بدوارز',style: TextStyle(fontFamily: 'Yekan'),),
+                          Text('بدوارز ',style: TextStyle(fontFamily: 'Yekan'),),
                           Text('بازیکنان $Bedwarsplayers',style: TextStyle(fontFamily: 'Beirut'),),
                         ],
                       ),
