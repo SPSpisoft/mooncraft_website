@@ -21,6 +21,7 @@ import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:snowfall/snowfall.dart';
 import 'package:flutter/rendering.dart';
 import 'package:animated_styled_widget/animated_styled_widget.dart';
+import 'package:get/get.dart';
 
 void main() {
   runApp(home());
@@ -103,7 +104,7 @@ class _homeState extends State<home> {
 
 @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       title: "Mooncraft",
       darkTheme: ThemeData(brightness: Brightness.dark),
       themeMode: ThemeMode.dark,
@@ -121,8 +122,7 @@ class _homeState extends State<home> {
               blurRadius: 5,
               child: Text("داشبورد", style: TextStyle(fontFamily: 'Beirut')),
               onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder:
-                    (context) => dashboardPage(),));
+                Get.to(dashboardPage());
                 //Navigator There
 
                 // Navigator.of(context).push(PageRouteBuilder(
